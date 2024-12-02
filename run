@@ -1,0 +1,3 @@
+#!/bin/bash
+python compiler/main.py "$1" out.asx
+java -jar asciiscript.jar out.asx

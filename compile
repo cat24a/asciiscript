@@ -1,0 +1,6 @@
+#!/bin/bash
+JAVA_HOME=/lib/jvm/java-21-openjdk/bin
+rm -r bin
+mkdir bin
+"$JAVA_HOME/javac" asciiscript/*.java -d bin
+"$JAVA_HOME/jar" --create --file asciiscript.jar --manifest MANIFEST.MF -C bin .
